@@ -1,0 +1,37 @@
+logdir: tblog
+index: student
+
+teacher_ckpt: 'your teacher ckpt'
+
+data_root: 'your data root'
+
+num_classes: 1
+num_headers: 5
+
+modality: train
+
+ema_alpha: 0.99
+
+mma_weights:
+  - 0.10459376
+  - 0.23636264
+  - 0.18613006
+  - 0.28535755
+  - 0.18755598
+
+num_workers: 24
+batch_size: 16
+
+resnet_size: 18
+ckpt: null
+
+alpha: 0.25
+gamma: 2
+lambda: 0.2
+gradient_reversal_factor: 0.01
+
+neg_weight: 0.05
+
+weight_decay: 5.0e-5
+max_iters: 20000
+lr: 1.0e-4

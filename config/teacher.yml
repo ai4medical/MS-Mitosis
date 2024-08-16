@@ -1,0 +1,26 @@
+logdir: tblog
+index: teacher
+
+data_root: 'your data root'
+
+num_classes: 1
+num_headers: 5
+
+modality: train
+
+num_workers: 16
+batch_size: 16
+
+resnet_size: 18
+ckpt: null
+
+alpha: 0.25
+gamma: 2
+lambda: 0.2
+gradient_reversal_factor: 0.01
+
+neg_weight: 0.05
+
+weight_decay: 5.0e-5
+max_iters: 20000
+lr: 1.0e-4
